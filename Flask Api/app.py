@@ -57,4 +57,5 @@ def get_leave_info():
         return jsonify({'error': 'Invalid EmployeeID format'}), 400
 
 if __name__ == '__main__':
+    print('App in operation: Example to call \n http://localhost:5000/get_leave_info?EmployeeID=1')
     app.run(debug=True)
